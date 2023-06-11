@@ -18,6 +18,8 @@ class DealFactory extends Factory
     {
         return [
             'title' => fake()->words(3, true),
+            'description' => fake()->words(10, true),
+            'user_id' => fake()->numberBetween(1, 5),
             'created_at' => fake()->dateTime(),
             'updated_at' => fake()->dateTime(),
         ];
